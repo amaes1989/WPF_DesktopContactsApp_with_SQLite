@@ -1,0 +1,21 @@
+﻿<Window x:Class="DesktopContactsApp.ContactDetailsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DesktopContactsApp"
+        mc:Ignorable="d"
+        Title="ContactDetailsWindow" Height="400" Width="300">
+    <Grid>
+        <StackPanel Margin="15">
+            <Label Content="Name:" Style="{StaticResource fontLabel}"/>
+            <TextBox x:Name="txtName" Margin="0,5"  Style="{StaticResource fontTextbox}"/>
+            <Label Content="E-mail:" Style="{StaticResource fontLabel}"/>
+            <TextBox x:Name="txtEmail" Margin="0,5" Style="{StaticResource fontTextbox}"/>
+            <Label Content="Phonenumber:" Style="{StaticResource fontLabel}"/>
+            <TextBox x:Name="txtPhonenumber" Margin="0,5" Style="{StaticResource fontTextbox}"/>
+            <Button x:Name="btnUpdate" Content="Update" Margin="0,10" Style="{StaticResource fontButton}" Click="btnUpdate_Click"/>
+            <Button x:Name="btnDelete" Content="Delete" Margin="0,10" Style="{StaticResource warningButton}" Click="btnDelete_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
